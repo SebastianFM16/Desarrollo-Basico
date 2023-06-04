@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.CSS">
+    <title>Juego copia de Pokemon</title>
+</head>
+
+<body>
+    <section class="container">
+        <section class="title">
+            <span class="primary">
+                <h1>Animales Mitologicos</h1>
+            </span>
+            <span class="secundary">
+                Estos son los animales fantasticos
+            </span>
+        </section>
+        <section class="gallery-wrapper">
+            <figure class="gallery-item">
+                <img src="IMG/OctoShnapps.jpg" alt="OctoShnapps" class="item-image">
+                <figcaption class="item-description">
+                    <h2 class="name">OctoShnapps</h2>
+                    <span class="role">Un gigantesco calamar sediento de venganza</span>
+                </figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="IMG/CopperGolem.jpg" alt="GolemDeCobre" class="item-image">
+                <figcaption class="item-description">
+                    <h2 class="name">CopperGolem</h2>
+                    <span class="role">Un golem de cobre huerfano luego de la muerte de su herrero</span>
+                </figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="IMG/FireRatworks.jpg" alt="FireRatworks" class="item-image">
+                <figcaption class="item-description">
+                    <h2 class="name">FireRatworks</h2>
+                    <span class="role">Una rata con poderes de fuego, no se que esperas</span>
+                </figcaption>
+            </figure>
+        </section>
+    </section>
+
+    <section id="seleccionar_animal">
+
+        <input type="radio" name="animales" id="OctoShnapps">
+        <label for="OctoShnapps">OctoShnapps</label>
+
+        <input type="radio" name="animales" id="CopperGolem">
+        <label for="CopperGolem">CopperGolem</label>
+
+        <input type="radio" name="animales" id="FireRatworks">
+        <label for="FireRatworks">FireRatworks</label>
+
+        <button id="boton_seleccionar">Seleccionar</button>
+
+    </section>
+    <section id="seleccionar_poder">
+        <h2>Elige Un Poder</h2>
+        <p>Tu animal fantastico <span id="animalJugador"></span> tiene 3 almas</p>
+        <p>El animal fantastico del contrincante es <span id="animalRival"></span></p>
+
+        <section>
+            <button id="boton_tierra">Terremoto</button>
+            <button id="boton_agua">Maremoto</button>
+            <button id="boton_fuego">Lanzallamas</button>
+        </section>
+
+    </section>
+    <section id="mensajes">
+        <p>Tu animal atacó con FUEGO, el animal contrincante atacó con tierra, Has GANADO...</p>
+    </section>
+    <section id="nuevo_inicio">
+        <button id="boton_recargable">Recargar Vidas</button>
+    </section>
+</body>
+
+<script src="JS/work.js"></script>
+
+</html>
